@@ -1,9 +1,11 @@
 package com.joshbarros.springproviders.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -22,4 +24,8 @@ public class Service {
 
     @Column
     private BigDecimal price;
+
+    @Column
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate date;
 }
