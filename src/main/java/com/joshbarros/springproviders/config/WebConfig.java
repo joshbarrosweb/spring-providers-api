@@ -11,7 +11,7 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.Arrays;
 import java.util.List;
 
-@Configuration
+/* @Configuration
 public class WebConfig {
 
     @Bean
@@ -35,3 +35,4 @@ public class WebConfig {
         return filter;
     }
 }
+*/
